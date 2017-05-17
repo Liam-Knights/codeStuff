@@ -16,7 +16,7 @@ public:
 	Matrix3 m_globalTransform;
 
 	void updateGlobalTransform();
-	void rotate(float angle);
+
 
 	
 
