@@ -1,9 +1,6 @@
 #pragma once
 #include "entity.h"
-#include "Matrix2.h"
-#include "Vector2.h"
-#include "Application.h"
-#include "Renderer2D.h"
+#include "playerArm.h"
 
 
 
@@ -13,11 +10,17 @@ public:
 	player();
 	~player();
 
+	void Draw(aie::Renderer2D* m_2dRender);
+	void update(float deltaTime);
 
+private:
 
-	Matrix2 gunPos();
-
-
+	playerArm* arm;
+	Vector2 pos;
+	Vector2 Dir;
+	Vector2 veloc;
+	float mass;
+	float speed;
 
 };
 

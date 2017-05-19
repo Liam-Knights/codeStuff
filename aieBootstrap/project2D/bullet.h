@@ -1,10 +1,10 @@
 #pragma once
 
-#include "player.h"
+#include "playerArm.h"
 #include "Matrix2.h"
 #include "Vector2.h"
 
-class bullet : public player
+class bullet : public entity
 {
 public:
 	bullet();

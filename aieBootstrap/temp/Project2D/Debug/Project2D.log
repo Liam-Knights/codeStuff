@@ -1,2 +1,12 @@
-﻿  Application2D.cpp
-  Project2D.vcxproj -> C:\Users\s171162\Desktop\aieBootstrap\temp\Project2D\Debug\Project2D.exe
+﻿  playerArm.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(22): error C2143: syntax error: missing ';' before '*'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(22): error C2238: unexpected token(s) preceding ';'
+  bullet.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(22): error C2143: syntax error: missing ';' before '*'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(22): error C2238: unexpected token(s) preceding ';'
+  Generating Code...
+  Compiling...
+  player.cpp
+  Generating Code...
