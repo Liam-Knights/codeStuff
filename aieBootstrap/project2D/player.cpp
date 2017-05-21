@@ -36,5 +36,41 @@ void player::Draw(aie::Renderer2D* m_2dRender)
 void player::update(float deltaTime)
 {
 	Input* input = Input::getInstance();
+	Dir = Vector2(0, 0);
+	if (input->isKeyDown(INPUT_KEY_W))
+	{
+
+	}
+	if (input->isKeyDown(INPUT_KEY_A))
+	{
+		Dir = Vector2(-1, 0);
+	}
+	if (input->isKeyDown(INPUT_KEY_D))
+	{
+		Dir = Vector2(1, 0);
+	}
+	Vector2 forcesum = Dir *speed;
+	Vector2 acceleration = forcesum / mass;
+	Vector2 dampening = -(veloc * drag);
+	veloc += (acceleration + dampening) * deltaTime;
+	pos = veloc * deltaTime;
+	Matrix3 changePos;
+	changePos.setpos(pos);
+	m_localTransform = m_localTransform * changePos;
+	updateGlobalTransform();
+	arm->update(deltaTime);
+	entity* coll = colideMan::getInstance()->testCollAABB(this);
+	if (coll != nullptr)
+	{
+		mass = 25.0;
+		veloc = -veloc;
+		pos = veloc * deltaTime;
+	}
+	else
+	{
+		mass = 1.5f;
+	}
+
+
 	
 }

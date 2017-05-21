@@ -20,6 +20,7 @@ private:
 	Vector2 Dir;
 	Vector2 veloc;
 	float mass;
+	float drag;
 	float speed;
 
 };
