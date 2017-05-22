@@ -1,29 +1,26 @@
-﻿Build started 22/05/17 5:31:51 AM.
-     1>Project "C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\Project2D.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\includes" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\\" /Fd"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Application2D.cpp bullet.cpp colideMan.cpp enemy.cpp entity.cpp main.cpp player.cpp playerArm.cpp
-         playerArm.cpp
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.h(18): error C2143: syntax error: missing ';' before '*'
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.h(18): error C2238: unexpected token(s) preceding ';'
-         player.cpp
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.cpp(53): error C2678: binary '/': no operator found which takes a left-hand operand of type 'Vector2' (or there is no acceptable conversion)
-         c:\users\liam\desktop\code stuff\aiebootstrap\project2d\includes\vector2.h(14): note: could be 'Vector2 Vector2::operator /(const Vector2 &)'
-         c:\users\liam\desktop\code stuff\aiebootstrap\project2d\includes\vector2.h(30): note: or       'Vector2 operator /(const float,const Vector2 &)'
-         c:\users\liam\desktop\code stuff\aiebootstrap\project2d\includes\vector3.h(31): note: or       'Vector3 operator /(const float,const Vector3 &)'
-         c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.cpp(53): note: while trying to match the argument list '(Vector2, float)'
-         main.cpp
-         entity.cpp
-         enemy.cpp
-         colideMan.cpp
-         bullet.cpp
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.h(18): error C2143: syntax error: missing ';' before '*'
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\liam\desktop\code stuff\aiebootstrap\project2d\player.h(18): error C2238: unexpected token(s) preceding ';'
-         Application2D.cpp
-         Generating Code...
-     1>Done Building Project "C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\Project2D.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:05.04
+﻿  playerArm.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2143: syntax error: missing ';' before '*'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2238: unexpected token(s) preceding ';'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(53): error C2059: syntax error: 'if'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(54): error C2143: syntax error: missing ';' before '{'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(55): error C2660: 'bullet::update': function does not take 2 arguments
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(56): error C2143: syntax error: missing ';' before '}'
+  player.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.cpp(53): error C2678: binary '/': no operator found which takes a left-hand operand of type 'Vector2' (or there is no acceptable conversion)
+  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\includes\vector2.h(14): note: could be 'Vector2 Vector2::operator /(const Vector2 &)'
+  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\includes\vector2.h(30): note: or       'Vector2 operator /(const float,const Vector2 &)'
+  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\includes\vector3.h(31): note: or       'Vector3 operator /(const float,const Vector3 &)'
+  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.cpp(53): note: while trying to match the argument list '(Vector2, float)'
+  bullet.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2143: syntax error: missing ';' before '*'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2238: unexpected token(s) preceding ';'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.h(20): error C2143: syntax error: missing ';' before '*'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.h(20): error C2238: unexpected token(s) preceding ';'
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(18): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(19): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+  Generating Code...

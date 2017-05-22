@@ -48,9 +48,11 @@ void playerArm::update(float deltaTime)
 	m_localTransform[0][0] = lookAt.y;
 	m_localTransform[0][1] = lookAt.x;
 
+	Vector2 Dir = 
+
 	if (input->isMouseButtonDown(INPUT_MOUSE_BUTTON_LEFT))
 	{
-
+		bulet->update(deltaTime, Dir)
 	}
 
 
