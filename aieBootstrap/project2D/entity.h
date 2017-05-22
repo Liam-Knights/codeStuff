@@ -42,14 +42,13 @@ protected:
 
 	//pointer to a parent
 	entity* m_Parent;
+	//pointer to the child
 	std::vector<entity*> m_Children;
-
+	// from here down these the pointers to the textures for body, the gun arm, the bullet and the enemy
 	aie::Texture* m_bodyT;
 	aie::Texture* m_armT;
 	aie::Texture* m_bulletT;
 	aie::Texture* m_enemyT;
-	aie::Texture* m_groundT;
-	aie::Texture* m_backgroundT;
 
 };
 

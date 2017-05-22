@@ -7,6 +7,7 @@
 
 using namespace aie;
 
+//constructor setting the position and the texture
 enemy::enemy()
 {
 	m_enemyT = new Texture("./textures/slime.png");
@@ -21,18 +22,19 @@ enemy::enemy()
 	updateGlobalTransform();
 }
 
-
+//destructor for deleting the new
 enemy::~enemy()
 {
 	delete m_enemyT;
 }
 
-
+//draw function
 void enemy::Draw(aie::Renderer2D* m_2dRender)
 {
 	m_2dRender->drawSpriteTransformed3x3(m_enemyT, m_globalTransform);
 }
 
+//update function
 void enemy::update(float deltaTime, aie::Renderer2D * m_Rederm_2dRender)
 {
 

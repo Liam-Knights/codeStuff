@@ -6,7 +6,7 @@
 
 using namespace aie;
 
-
+//constructor setting the parent
 playerArm::playerArm()
 {
 	m_armT = new Texture("./textures/arm.png");
@@ -15,13 +15,14 @@ playerArm::playerArm()
 	setChild(bulet);
 }
 
-
+//destructor deleting things as it does
 playerArm::~playerArm()
 {
 	delete m_armT;
 	delete bulet;
 }
 
+//update funbction
 void playerArm::update(float deltaTime)
 {
 	Vector2 Target;
@@ -57,6 +58,7 @@ void playerArm::update(float deltaTime)
 
 }
 
+//draw function
 void playerArm::draw(aie::Renderer2D* m_2dRender)
 {
 	m_2dRender->drawSpriteTransformed3x3(m_armT, m_globalTransform, 0, 0, 0, 0.3, 0.3);

@@ -1,19 +1,24 @@
 #include "colideMan.h"
 #include <iostream>
 
+//setting the instance to null to start
 colideMan* colideMan::m_instance = nullptr;
+
+//defualt
 colideMan::colideMan()
 {
 }
 
-
+//default
 colideMan::~colideMan()
 {
 }
+//the get instance function
 colideMan* colideMan::getInstance()
 {
 	return m_instance;
 }
+//creating a new instance
 void colideMan::create()
 {
 	if (!m_instance)
@@ -22,16 +27,19 @@ void colideMan::create()
 	}
 }
 
+//destroying when done with instance
 void colideMan::destroy()
 {
 	delete m_instance;
 }
 
+//adding an object
 void colideMan::addObj(entity* pObj)
 {
 	m_colideList.push_back(pObj);
 }
 
+//removeing an object
 void colideMan::removeObj(entity* pObj)
 {
 	auto iterate = find(m_colideList.begin(), m_colideList.end(), pObj);
@@ -41,6 +49,7 @@ void colideMan::removeObj(entity* pObj)
 	}
 }
 
+//testing the collision
 entity* colideMan::testCollAABB(entity* pObj)
 {
 	for(unsigned int i = 0; i < m_colideList.size(); ++i)

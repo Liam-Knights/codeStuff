@@ -8,6 +8,7 @@
 
 using namespace aie;
 
+//constructor
 bullet::bullet()
 {
 	speed = 200;
@@ -27,12 +28,13 @@ bullet::bullet()
 	IsPickedUp = false;
 }
 
-
+//destructor
 bullet::~bullet()
 {
 	delete m_bulletT;
 }
 
+//update function
 void bullet::update(float deltaTime)
 {
 	Matrix3 temp;
@@ -44,6 +46,7 @@ void bullet::update(float deltaTime)
 	updateGlobalTransform();
 }
 
+//shoot function ka pow or whatever
 void bullet::shoot(Vector2 Dir, Vector2 Pos)
 {
 	direction = Dir;
@@ -52,6 +55,7 @@ void bullet::shoot(Vector2 Dir, Vector2 Pos)
 	updateGlobalTransform();
 }
 
+//draw function
 void bullet::draw(aie::Renderer2D* m_2dRender)
 {
 	m_2dRender->drawSpriteTransformed3x3(m_bulletT, m_globalTransform);

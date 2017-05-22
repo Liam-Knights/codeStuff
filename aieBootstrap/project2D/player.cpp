@@ -7,6 +7,7 @@
 
 using namespace aie;
 
+//constructor seeting the child and parent 
 player::player()
 {
 	m_bodyT = new Texture("./textures/body.png");
@@ -19,14 +20,14 @@ player::player()
 	colideMan::getInstance()->addObj(this);
 }
 
-
+//destructor for delete's
 player::~player()
 {
 	delete m_bodyT;
 	delete arm;
 }
 
-
+//draw function
 void player::Draw(aie::Renderer2D* m_2dRender)
 {
 	m_2dRender->setCameraPos(m_globalTransform.mtx[2][0] - 640, m_globalTransform.mtx[2][1] - 360);
@@ -34,6 +35,7 @@ void player::Draw(aie::Renderer2D* m_2dRender)
 	arm->draw(m_2dRender);
 }
 
+//update function
 void player::update(float deltaTime)
 {
 	Input* input = Input::getInstance();
@@ -49,6 +51,10 @@ void player::update(float deltaTime)
 	if (input->isKeyDown(INPUT_KEY_D))
 	{
 		Dir = Vector2(1, 0);
+	}
+	if (input->isKeyDown(INPUT_KEY_S))
+	{
+		veloc.y -= 100;
 	}
 	Vector2 forcesum = Dir *speed;
 	Vector2 acceleration;
