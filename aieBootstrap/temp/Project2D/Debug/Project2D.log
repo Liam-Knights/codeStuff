@@ -1,26 +1,6 @@
-﻿  playerArm.cpp
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2143: syntax error: missing ';' before '*'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2238: unexpected token(s) preceding ';'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(53): error C2059: syntax error: 'if'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(54): error C2143: syntax error: missing ';' before '{'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(55): error C2660: 'bullet::update': function does not take 2 arguments
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(56): error C2143: syntax error: missing ';' before '}'
-  player.cpp
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.cpp(53): error C2678: binary '/': no operator found which takes a left-hand operand of type 'Vector2' (or there is no acceptable conversion)
-  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\includes\vector2.h(14): note: could be 'Vector2 Vector2::operator /(const Vector2 &)'
-  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\includes\vector2.h(30): note: or       'Vector2 operator /(const float,const Vector2 &)'
-  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\includes\vector3.h(31): note: or       'Vector3 operator /(const float,const Vector3 &)'
-  c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.cpp(53): note: while trying to match the argument list '(Vector2, float)'
-  bullet.cpp
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2143: syntax error: missing ';' before '*'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\player.h(18): error C2238: unexpected token(s) preceding ';'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.h(20): error C2143: syntax error: missing ';' before '*'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.h(20): error C2238: unexpected token(s) preceding ';'
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(18): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(19): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
-  Generating Code...
+﻿  entity.cpp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+MathLib.lib(Matrix3.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Matrix3.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+MathLib.lib(Vector2.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Vector2.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+MathLib.lib(Vector3.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Vector3.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+  Project2D.vcxproj -> C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\Project2D.exe

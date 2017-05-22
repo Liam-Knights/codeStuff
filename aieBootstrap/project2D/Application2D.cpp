@@ -2,6 +2,7 @@
 #include "Texture.h"
 #include "Font.h"
 #include "Input.h"
+#include "colideMan.h"
 
 using namespace aie;
 
@@ -15,6 +16,9 @@ Application2D::~Application2D()
 
 bool Application2D::startup() 
 {
+	colideMan::create();
+
+
 	m_2dRenderer = new Renderer2D();
 
 	m_shipTexture = new Texture("./textures/ship.png");
@@ -22,6 +26,10 @@ bool Application2D::startup()
 	m_font = new Font("./font/consolas.ttf", 32);
 
 	m_audio = new Audio("./audio/powerup.wav");
+
+	m_player = new player();
+
+	m_enemy = new enemy();
 
 	m_cameraX = 0;
 	m_cameraY = 0;
@@ -36,6 +44,9 @@ void Application2D::shutdown()
 	delete m_font;
 	delete m_shipTexture;
 	delete m_2dRenderer;
+	delete m_player;
+	delete m_enemy;
+	colideMan::destroy();
 }
 
 void Application2D::update(float deltaTime) 
@@ -65,6 +76,8 @@ void Application2D::update(float deltaTime)
 	// exit the application
 	if (input->isKeyDown(INPUT_KEY_ESCAPE))
 		quit();
+
+	m_player->update(deltaTime);
 }
 
 void Application2D::draw() 
@@ -73,10 +86,13 @@ void Application2D::draw()
 	clearScreen();
 
 	// set the camera position before we begin rendering
-	m_2dRenderer->setCameraPos(m_cameraX, m_cameraY);
+//	m_2dRenderer->setCameraPos(m_cameraX, m_cameraY);
 
 	// begin drawing sprites
 	m_2dRenderer->begin();
+
+	m_player->Draw(m_2dRenderer);
+	m_enemy->Draw(m_2dRenderer);
 
 	// demonstrate spinning sprite
 	m_2dRenderer->setUVRect(0,0,1,1);

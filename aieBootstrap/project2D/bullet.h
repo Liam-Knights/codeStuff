@@ -1,6 +1,5 @@
 #pragma once
 
-#include "playerArm.h"
 #include "entity.h"
 #include "Matrix2.h"
 #include "Vector2.h"
@@ -13,11 +12,13 @@ public:
 
 	void update(float deltaTime);
 	void draw(aie::Renderer2D* m_2dRenderer);
+	void shoot(Vector2 Dir, Vector2 Pos);
+
 private:
 
 	float speed;
 	float speedDefault;
-	Vector3 direction;
+	Vector2 direction;
 
 	bool IsThrown;
 	bool IsPickedUp;

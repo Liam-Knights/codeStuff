@@ -46,20 +46,19 @@ void playerArm::update(float deltaTime)
 	m_localTransform[1][1] = lookAt.y;
 
 	m_localTransform[0][0] = lookAt.y;
-	m_localTransform[0][1] = lookAt.x;
+	m_localTransform[0][1] = -lookAt.x;
 
-	Vector2 Dir = 
 
 	if (input->isMouseButtonDown(INPUT_MOUSE_BUTTON_LEFT))
 	{
-		bulet->update(deltaTime, Dir)
+		bulet->shoot(lookAt, pos);
 	}
-
+	bulet->update(deltaTime);
 
 }
 
 void playerArm::draw(aie::Renderer2D* m_2dRender)
 {
-	m_2dRender->drawSpriteTransformed3x3(m_bulletT, m_globalTransform);
-	bulet->Draw(m_2dRender);
+	m_2dRender->drawSpriteTransformed3x3(m_armT, m_globalTransform, 0, 0, 0, 0.3, 0.3);
+	bulet->draw(m_2dRender);
 }

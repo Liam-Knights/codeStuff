@@ -1,5 +1,4 @@
 #pragma once
-#include "player.h"
 #include "entity.h"
 #include "bullet.h"
 

@@ -4,8 +4,9 @@
 
 entity::entity()
 {
-	m_collider.m_tl = Vector2(-30, -30);
-	m_collider.m_br = Vector2(30, 30);
+	m_collider.m_tl = Vector2(-100, -100);
+	m_collider.m_br = Vector2(100, 100);
+	m_Parent = nullptr;
 }
 
 

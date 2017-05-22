@@ -1,7 +1,7 @@
 #include "colideMan.h"
 #include <iostream>
 
-
+colideMan* colideMan::m_instance = nullptr;
 colideMan::colideMan()
 {
 }
@@ -53,14 +53,14 @@ entity* colideMan::testCollAABB(entity* pObj)
 		collider1.m_tl = collider1.m_tl + pObj->getPos();
 		collider1.m_br = collider1.m_br + pObj->getPos();
 
-		collider collider2 = pObj->getCollider();
+		collider collider2 = m_colideList[i]->getCollider();
 		collider2.m_tl = collider2.m_tl + m_colideList[i]->getPos();
 		collider2.m_br = collider2.m_br + m_colideList[i]->getPos();
 
 		if (collider1.m_br.x > collider2.m_tl.x &&
 			collider1.m_br.y > collider2.m_tl.y &&
-			collider1.m_tl.x > collider2.m_br.x &&
-			collider1.m_tl.y > collider2.m_br.y)
+			collider1.m_tl.x < collider2.m_br.x &&
+			collider1.m_tl.y < collider2.m_br.y)
 		{
 			return m_colideList[i];
 		}
