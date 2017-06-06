@@ -1,0 +1,27 @@
+﻿Build started 07/05/17 1:08:12 PM.
+     1>Project "c:\Users\liam\documents\visual studio 2015\Projects\MathLib\MathLib\MathLib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\MathLib.pdb" /Gd /TP /errorReport:prompt Matrix2.cpp Matrix3.cpp Matrix4.cpp Vector2.cpp Vector3.cpp Vector4.cpp
+         Vector4.cpp
+         Vector3.cpp
+         Vector2.cpp
+         Matrix4.cpp
+         Matrix3.cpp
+         Matrix2.cpp
+         Generating Code...
+     1>c:\users\liam\documents\visual studio 2015\projects\mathlib\mathlib\vector2.cpp(139): warning C4715: 'Vector2::normalise': not all control paths return a value
+     1>c:\users\liam\documents\visual studio 2015\projects\mathlib\mathlib\vector3.cpp(155): warning C4715: 'Vector3::normalise': not all control paths return a value
+     1>c:\users\liam\documents\visual studio 2015\projects\mathlib\mathlib\vector4.cpp(169): warning C4715: 'Vector4::normalise': not all control paths return a value
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe /OUT:"c:\users\liam\documents\visual studio 2015\Projects\MathLib\x64\Debug\MathLib.lib" /NOLOGO /MACHINE:X64 x64\Debug\Matrix2.obj
+         x64\Debug\Matrix3.obj
+         x64\Debug\Matrix4.obj
+         x64\Debug\Vector2.obj
+         x64\Debug\Vector3.obj
+         x64\Debug\Vector4.obj
+         MathLib.vcxproj -> c:\users\liam\documents\visual studio 2015\Projects\MathLib\x64\Debug\MathLib.lib
+     1>Done Building Project "c:\Users\liam\documents\visual studio 2015\Projects\MathLib\MathLib\MathLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.42
