@@ -1,20 +1,19 @@
-﻿Build started 22/05/17 6:37:40 PM.
-     1>Project "C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\Project2D.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\includes" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\\" /Fd"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt player.cpp
-         player.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\Project2D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\lib" bootstrap.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib MathLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\Project2D.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\Project2D.lib" /MACHINE:X86 "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\Application2D.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\bullet.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\colideMan.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\enemy.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\entity.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\main.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\player.obj"
-         "C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\playerArm.obj"
-         Project2D.vcxproj -> C:\Users\liam\Desktop\code stuff\aieBootstrap\temp\Project2D\Debug\Project2D.exe
-     1>Done Building Project "C:\Users\liam\Desktop\code stuff\aieBootstrap\Project2D\Project2D.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:01.66
+﻿  playerArm.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(64): warning C4305: 'argument': truncation from 'double' to 'float'
+  player.cpp
+  main.cpp
+  entity.cpp
+  enemy.cpp
+  colideMan.cpp
+  bullet.cpp
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(19): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(20): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+  Application2D.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+MathLib.lib(Matrix3.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Matrix3.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+MathLib.lib(Vector2.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Vector2.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+MathLib.lib(Vector3.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Vector3.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+  Project2D.vcxproj -> C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\Project2D.exe
