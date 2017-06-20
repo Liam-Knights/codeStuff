@@ -1,19 +1,2 @@
-﻿  playerArm.cpp
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\playerarm.cpp(64): warning C4305: 'argument': truncation from 'double' to 'float'
-  player.cpp
-  main.cpp
-  entity.cpp
-  enemy.cpp
-  colideMan.cpp
-  bullet.cpp
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(19): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
-c:\users\s171162\desktop\codestuff\aiebootstrap\project2d\bullet.cpp(20): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
-  Application2D.cpp
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-MathLib.lib(Matrix3.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Matrix3.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
-MathLib.lib(Vector2.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Vector2.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
-MathLib.lib(Vector3.obj) : warning LNK4099: PDB 'MathLib.pdb' was not found with 'MathLib.lib(Vector3.obj)' or at 'C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\MathLib.pdb'; linking object as if no debug info
+﻿  Application2D.cpp
   Project2D.vcxproj -> C:\Users\s171162\Desktop\codestuff\aieBootstrap\temp\Project2D\Debug\Project2D.exe

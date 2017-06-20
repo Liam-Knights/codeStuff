@@ -103,7 +103,7 @@ void Application2D::draw()
 
 	// draw a moving purple circle
 	m_2dRenderer->setRenderColour(99, 0, 3, 1);
-	m_2dRenderer->drawCircle(sin(m_timer) * 100 + 700, 150, 50);
+	m_2dRenderer->drawCircle(sin(m_timer) * 100 + 700, 150, sin(m_timer) * 10 + 50);
 
 	// draw a rotating red box
 	m_2dRenderer->setRenderColour(1, 2, 0, 1);
