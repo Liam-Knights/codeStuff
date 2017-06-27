@@ -59,13 +59,14 @@ Matrix2 Matrix2::operator*(const Matrix2& rhs)
 
 Vector2& Matrix2::operator[](int index)
 {
-
+	//returns a pointer to a vector
 	return *(Vector2*)mtx[index];
 
 }
 
 void Matrix2::setRotate(const float a)
 {
+	//sets the rotate and the position
 	mtx[0][0] = cos(a);
 	mtx[1][0] = -sin(a);
 
@@ -75,12 +76,13 @@ void Matrix2::setRotate(const float a)
 
 Matrix2::operator float*()
 {
+	//returns mtx
 	return &mtx[0][0];
 }
 
 void  Matrix2::setScale(const float x, const float y)
 {
-
+	//sets the scale for the c and y values
 	mtx[0][0] = x;
 	mtx[0][1] = 0;
 
